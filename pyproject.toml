@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fantasyliga-tools"
+version = "0.1.0"
+description = "FantasyLiga data extraction and lineup optimization"
+requires-python = ">=3.10"
+dependencies = [
+  "playwright==1.51.0",
+  "pandas==2.2.3",
+  "pulp==2.9.0"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
